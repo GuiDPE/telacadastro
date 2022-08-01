@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastramento</title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container-titulo">
+            <h1>Formulário de cadastro</h1>
+        </div>
+
+        <div class="sub-container">
+            <div class="foto-perfil">
+                <img src="img/foto-perfil.png" alt="">
+                <label for="enviar-foto">Enviar foto</label>
+                <input type="file" id="enviar-foto">
+            </div>
+            
+            <form action="prova.html" method="post" autocomplete="off">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Nome Completo" maxlength="50" required>
+                
+                <label for="e-mail">E-mail:</label>
+                <input type="email" nome="email" id="e-mail" placeholder="Cadastre o Email" maxlength="40" required>
+            
+                <div class="sub-container">
+                    <div class="div-form-1">
+                            <div>
+                                <label for="telefone">Telefone:</label>
+                                <input type="tel" nome="telefone" id="telefone" placeholder="(xx)-xxxxx-xxxx" maxlength="11" required>
+                            </div>
+                            <div>
+                                <label for="genero">Gênero</label>
+                                <select name="genero" id="genero">
+                                    <option value="Masculino">Masculino</option>
+                                    <option value="feminino">Feminino</option>
+                                    <option value="Outros">Outros</option>
+                                </select>
+                            </div>
+            
+                            <!--
+                                min="0" (Numero mínimo) max="60" (Numero máximo).
+                                value é o valor mostrado no campo (Parecido com placeholder mas o valor não é um exemplo).
+                            -->
+                    </div>
+                    <div class="div-form-2">
+                            <div>
+                                <label for="idade">Idade:</label>
+                                <input type="number" nome="idade" id="idade" min="18" max="60" value="18" required>
+                            </div>
+            
+                            <div>
+                                <label for="estado">Estado</label>
+                                <select name="estado" id="estado" placeholder="aqui">
+                                    <option value="São paulo">São Paulo</option>
+                                    <option value="Minas gerais">Minas Gerais</option>
+                                    <option value="Rio de Janeiro">Rio de Janeiro</option>
+                                </select>
+                            </div>
+                    </div>
+                </div>
+                <div class="container-cadastro">
+                    <a href="prova.html"><button type="submit">Cadastrar</button></a>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>
+
